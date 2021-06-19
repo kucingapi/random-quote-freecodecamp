@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/random-quote-freecodecamp/static/css/main.91343ec1.chunk.css",
+    "main.js": "/random-quote-freecodecamp/static/js/main.d5f0865b.chunk.js",
+    "main.js.map": "/random-quote-freecodecamp/static/js/main.d5f0865b.chunk.js.map",
+    "runtime-main.js": "/random-quote-freecodecamp/static/js/runtime-main.43ceaca0.js",
+    "runtime-main.js.map": "/random-quote-freecodecamp/static/js/runtime-main.43ceaca0.js.map",
+    "static/js/2.45d473b8.chunk.js": "/random-quote-freecodecamp/static/js/2.45d473b8.chunk.js",
+    "static/js/2.45d473b8.chunk.js.map": "/random-quote-freecodecamp/static/js/2.45d473b8.chunk.js.map",
+    "index.html": "/random-quote-freecodecamp/index.html",
+    "static/css/main.91343ec1.chunk.css.map": "/random-quote-freecodecamp/static/css/main.91343ec1.chunk.css.map",
+    "static/js/2.45d473b8.chunk.js.LICENSE.txt": "/random-quote-freecodecamp/static/js/2.45d473b8.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.43ceaca0.js",
+    "static/js/2.45d473b8.chunk.js",
+    "static/css/main.91343ec1.chunk.css",
+    "static/js/main.d5f0865b.chunk.js"
+  ]
+}
