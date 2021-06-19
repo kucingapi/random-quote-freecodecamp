@@ -24,6 +24,7 @@ a{
   border-radius: 5px;
   margin-top: auto;
   background: hsl(218, 12%, 19%);
+  -webkit-transition: height 2s ease;
 }
 
 #quote-box > *{
@@ -66,7 +67,7 @@ a{
   padding: 5px;
   height: 40px;
   width: 40px;
-  transition: 200ms;
+  transition: 2s;
 }
 
 #tweet-quote:hover{
