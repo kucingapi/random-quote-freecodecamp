@@ -3,7 +3,6 @@ import {useState} from 'react';
 import {useEffect} from 'react';
 import {FaQuoteLeft} from 'react-icons/fa';
 import {FaTwitter} from 'react-icons/fa';
-import {TiSocialTumbler} from 'react-icons/ti';
 
 function App() {
 
@@ -14,13 +13,21 @@ function App() {
   const [quote, setQuote] = useState('');
   const [currentHue, setHue] = useState(0);
   const [currentColor, setColor] = useState('hsl(0,80%,60%)');
+  const [twitterLink, setTwitterLink] = useState('');
 
   useEffect(async () => {
 		const response = await fetch('https://api.quotable.io/random');
 		const data = await response.json();
     console.log(data.content);
 		setQuote(data);
+
+    setTwitterLink(
+      'https://twitter.com/intent/tweet?hashtags=quotes&related=freecodecamp&text=' +
+      encodeURIComponent('"' + data.content + '" ' + data.author)
+    );
+
   },[currentColor])
+  
 
   const changingColor = () => {
     currentHue === 250? setHue(0) : setHue(currentHue +50);
@@ -37,7 +44,7 @@ function App() {
         <p id="text" style={{color: currentColor}}><FaQuoteLeft/> {quote.content}</p>
         <p id="author" style={{color: currentColor}}>-{quote.author}</p>
         <div className="link">
-          <a id="tweet-quote" href="twitter.com/intent/tweet" style={{color: currentColor}}>
+          <a id="tweet-quote" href={twitterLink} target="_top" style={{color: currentColor}}>
             <FaTwitter/>
           </a>
 
