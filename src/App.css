@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;600;700&display=swap');
 
 body{
   font-family: 'Poppins', sans-serif !important;
@@ -8,6 +8,10 @@ body{
   display: grid;
   place-items: center;
   min-height: 100vh;
+}
+
+a{
+  text-decoration: none;
 }
 
 *{
@@ -41,6 +45,34 @@ body{
   padding: 10px;
   border-radius: 3px;
   transition: background 2s ease;
+  font-weight: 600;
+  color: hsl(0, 70%, 100%) !important;
+  margin-left: auto;
+  transition: 2s;
 }
 
+.link{
+  margin-top: 20px;
+  display: flex;
+  font-size: 30px;
+  transition: color 2s ease;
+}
 
+#tweet-quote{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgb(75, 69, 69);
+  padding: 5px;
+  height: 40px;
+  width: 40px;
+  transition: 200ms;
+}
+
+#tweet-quote:hover{
+  filter: brightness(1.5);
+}
+
+#new-quote:hover{
+  filter: brightness(1.2);
+}
