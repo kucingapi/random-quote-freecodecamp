@@ -36,5 +36,11 @@ body{
   justify-content: flex-end;
 }
 
+#new-quote{
+  border: none;
+  padding: 10px;
+  border-radius: 3px;
+  transition: background 2s ease;
+}
 
 
